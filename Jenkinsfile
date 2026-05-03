@@ -1,6 +1,5 @@
 pipeline {
-    agent any
-
+    agent { label 'ec2' }
     tools {
         maven 'Maven3'
         jdk 'JDK11'
